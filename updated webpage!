@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FIRST COVID-19 CASES</h1>
+    <div class="container">        
+        <img src="worldmap.jpg" alt="">
+        <div class="hotspot southamerica" text="26th Feb 2020, BRAZIL, SOUTH AMERICA"></div>
+        <div class="hotspot europe" text="25th Jan 2020, FRANCE, EUROPE"></div>
+        <div class="hotspot australia" text="25th Jan 2020, VICTORIA, AUSTRALIA"></div>
+        <div class="hotspot china" text="17th Nov 2019, WUHAN, CHINA"></div>
+        <div class="hotspot africa" text="8th March 2020, RWANDA, AFRICA"></div>
+        <div class="hotspot india" text="30th Jan 2020, KERALA, INDIA"></div>
+        <div class="hotspot pakistan" text="26th Feb 2020, KARACHI, PAKISTAN"></div>
+        <div class="hotspot russia" text="31st Jan 2020, TYUMAN & CHITA, RUSSIA"></div>
+        <div class="hotspot srilanka" text="27th Jan 2020, COLOMBO, SRILANKA"></div>
+        <div class="hotspot mexico" text="28th Feb 2020, MEXICO CITY & LOS MOCHIS, MEXICO"></div>
+        <div class="hotspot usa" text="15th Jan 2020, EVERETT, WASHINGTON, UNITED STATES OF AMERICA"></div>
+    </div>
+</body>
+</html>
