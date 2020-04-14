@@ -28,7 +28,7 @@ h1{
 .hotspot{
     width: 15px;
     height: 15px;
-    background-color: rgb(212, 210, 75);
+    background-color: red;
     border-radius: 50%;
     position: absolute;
     animation: wave 1s infinite;
@@ -37,42 +37,57 @@ h1{
 
 .southamerica{
     left: 24%;
-    bottom: 11%;
+    bottom: 37%;
 }
 
 .europe{
     left: 48%;
-    top: 45%;
+    top: 11%;
 }
 
 .australia{
-    right: 18%;
-    bottom: 12%;
+    right: 11%;
+    bottom: 29%;
 }
 
 .china{
-    right: 29%;
-    bottom: 51%;
+    right: 22%;
+    top: 24%;
 }
 
 .africa{
-    left: 49%;
-    bottom: 25%;
+    left: 51%;
+    bottom: 57%;
 }
 
 .india{
-    right: 32%;
-    bottom: 36%;
+    right:29%;
+    top: 32%;
 }
 
 .pakistan{
-    right: 36%;
-    bottom: 49%;
+    right: 32%;
+    top: 24%;
 }
 
 .russia{
     right: 26%;
-    top: 49%;
+    top: 6%;
+}
+
+.srilanka{
+    right: 28%;
+    top: 43%;
+}
+
+.mexico{
+    left: 9%;
+    top: 27%;
+}
+
+.usa{
+    left: 8%;
+    top: 9%;
 }
 
 @keyframes wave{
