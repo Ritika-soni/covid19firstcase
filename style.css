@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: 'Patua One', cursive;
+    font-size: 60px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.container img{
+    width: 100%;
+}
+
+.hotspot{
+    width: 15px;
+    height: 15px;
+    background-color: #E8E7BE;
+    border-radius: 50%;
+    position: absolute;
+    animation: wave 1s infinite;
+    cursor: pointer;
+}
+
+.southamerica{
+    left: 24%;
+    bottom: 11%;
+}
+
+.europe{
+    left: 48%;
+    top: 50%;
+}
+
+.australia{
+    right: 9%;
+    bottom: 17%;
+}
+
+.china{
+    right: 21%;
+    bottom: 44%;
+}
+
+.africa{
+    left: 49%;
+    bottom: 25%;
+}
+
+.india{
+    right: 32%;
+    bottom: 37%;
+}
+
+.pakistan{
+    right: 36%;
+    bottom: 41%;
+}
+
+.russia{
+    right: 26%;
+    top: 49%;
+}
+
+@keyframes wave{
+    from{
+        box-shadow: 0 0 0 0 #9acd32bb;
+    }
+    to{
+        box-shadow: 0 0 0 10px #9acd3210;
+    }
+}
+
+.hotspot::before{
+    content: attr(text);
+    width: max-content;
+    position: absolute;
+    background-color: #222222dd;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    padding: 8px 20px;
+    font-size: 24px;
+    border-radius: 3px;
+    display: none;
+}
+
+.hotspot::after{
+    content: "";
+    border-color: transparent transparent #222222dd;
+    border-width: 0 8px 6px;
+    border-style: solid;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.hotspot:hover::before,
+.hotspot:hover::after{
+    display: block;
+}
