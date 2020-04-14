@@ -4,16 +4,15 @@ body{
     font-family: "Open Sans";
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 h1{
-    display: flex;
-    justify-content: center;
     text-decoration: underline;
     font-family: 'Patua One', cursive;
-    font-size: 60px;
+    font-size: 5vw;
 }
 
 .container{
@@ -29,7 +28,7 @@ h1{
 .hotspot{
     width: 15px;
     height: 15px;
-    background-color: #E8E7BE;
+    background-color: rgb(212, 210, 75);
     border-radius: 50%;
     position: absolute;
     animation: wave 1s infinite;
@@ -43,17 +42,17 @@ h1{
 
 .europe{
     left: 48%;
-    top: 50%;
+    top: 45%;
 }
 
 .australia{
-    right: 9%;
-    bottom: 17%;
+    right: 18%;
+    bottom: 12%;
 }
 
 .china{
-    right: 21%;
-    bottom: 44%;
+    right: 29%;
+    bottom: 51%;
 }
 
 .africa{
@@ -63,12 +62,12 @@ h1{
 
 .india{
     right: 32%;
-    bottom: 37%;
+    bottom: 36%;
 }
 
 .pakistan{
     right: 36%;
-    bottom: 41%;
+    bottom: 49%;
 }
 
 .russia{
@@ -95,9 +94,10 @@ h1{
     transform: translateX(-50%);
     top: 30px;
     padding: 8px 20px;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 3px;
     display: none;
+    overflow: hidden;
 }
 
 .hotspot::after{
@@ -110,6 +110,19 @@ h1{
     left: 50%;
     transform: translateX(-50%);
     display: none;
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .hotspot {
+        width: 10px;
+        height: 10px;        
+    }
+
+    .hotspot::before{
+        font-size: 10px;
+    }
+
 }
 
 .hotspot:hover::before,
